@@ -1,0 +1,46 @@
+[
+  {
+    "icon": "fa fa-home",
+    "slug": "external",
+    "title": "Volver al inicio",
+    "path": "index.html"
+  },
+  {
+    "id":0,
+    "icon": "fa fa-play-circle",
+    "slug": "introduccion",
+    "title": "Introducción",
+    "breadcrumb": ["Inicio","introduccion"],
+    "path": "pages/intro.html"
+  },
+  { 
+    "id": 1,
+    "icon": "fa fa-file-text",
+    "slug": "funciones",
+    "title": "1. Funciones con parámetros",
+    "breadcrumb": ["Inicio","funciones"],
+    "path": "pages/1-tema.html"  
+  },
+  { 
+    "id": 2,
+    "icon": "fa fa-file-text",
+    "slug": "tipos",
+    "title": "2. Tipos de parámetros",
+    "breadcrumb": ["Inicio","tipos"],
+    "path": "pages/2-tema.html"
+  },
+  { 
+    "id": 3,
+    "icon": "fa fa-file-text",
+    "slug": "ejercicios",
+    "title": "3. Ejercicios de funciones con parámetros",
+    "breadcrumb": ["Inicio","ejercicios"],
+    "path": "pages/3-tema.html"  
+  },
+  {
+    "icon": "fa fa-question-circle",
+    "slug": "actividad-1",
+    "title": "Actividad didáctica",
+    "path": "pages/actividad-1.html"
+  }
+]
