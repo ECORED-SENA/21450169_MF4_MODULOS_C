@@ -1,11 +1,11 @@
+include ../mixins/functions
+
 .container
 
-  ol
+    .header-ecored
+        h1 Referencias bibliográficas
 
-    li
-      p 
-        | Joyanes, L.; y Sánchez, L. (2006). Programación en C++: un enfoque práctico. España: Mc Graw Hill.
+    .jumbotron.bg-white.referencias
+        +referenciaItem("Joyanes, L.; y Sánchez, L. (2006). Programación en C++: un enfoque práctico. España: Mc Graw Hill.", "")
 
-    li
-      p
-        | Joyanes, L.; y Zahonero, I. (2007) Estructura de Datos en C++. España: Mc Graw Hill.
+        +referenciaItem("Joyanes, L.; y Zahonero, I. (2007) Estructura de Datos en C++. España: Mc Graw Hill.", "")

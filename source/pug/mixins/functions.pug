@@ -1,21 +1,42 @@
-mixin pageHeader(tituloTema, srcImagen)
-    .page-header.theme-light.mb-5
+mixin pageHeader(tituloTema, srcImagen, pagina)
 
-        .container
+    .curso-portada
 
-            .row.align-items-center
+        .row.align-items-center
 
-                .col-12.col-lg-6
+            .col-12.col-lg-6
 
-                    h3#curso-titulo-componente.curso-subtitulo Módulos, estructura de almacenamiento y POO utilizando el lenguaje de programación C++ (Nivel II)
-                    h1#curso-titulo-tema.curso-titulo= tituloTema
+                h3#curso-titulo-componente.curso-subtitulo Módulos, estructura de almacenamiento y POO utilizando el lenguaje de programación C++ (Nivel II)
+                h1#curso-titulo-tema.curso-titulo Funciones con parámetros
 
-                    .brand-line-primary
+                .brand-line-primary
 
-                .col-12.col-lg-6
+                if pagina == 'main'
 
-                    .d-none.d-lg-block
-                        img(src= srcImagen, style="max-width: 80%").img-fluid
+                    .barra-dots.mt-5
+                        img.img-fluid(src='assets/images/header/icon_dots.svg', alt='alt')
+
+                else 
+        
+                if pagina == 'home'
+                    a.curso-btn-iniciar.btn.btn-danger(href="main.html")
+                        span Iniciar Curso
+
+
+            .col-12.col-lg-6.text-center
+                .d-none.d-lg-block
+                    img(src= srcImagen).curso-imagen
+
+
+mixin referenciaItem(referencia, enlace, tituloenlace="")
+    p= referencia
+        if tituloenlace != ""
+            a(href= enlace, target="_blank").ml-2= tituloenlace
+        else if enlace != ""
+            a(href= enlace, target="_blank").ml-2= enlace
+    hr
+
+
 
 mixin navTemaItem(numero, titulo, ruta)
     li.list-group-item.nav-tema-item
@@ -35,6 +56,21 @@ mixin navTemaItem(numero, titulo, ruta)
                     .avatar.avatar-sm
                         span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
                             i.fa.fa-file-text-o
+            else if numero == 'folder'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-folder-open
+            else if numero == 'references'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-book
+            else if numero == 'glosary'
+                .col-auto
+                    .avatar.avatar-sm
+                        span.nav-tema-item__icon.avatar-title.font-size-lg.bg-secondary-soft.rounded-circle.text-primary.font-weight-bold 
+                            i.fa.fa-sort-alpha-asc
             else
                 .col-auto
                     .avatar.avatar-sm
@@ -46,7 +82,8 @@ mixin navTemaItem(numero, titulo, ruta)
             .col-auto                                            
                 a(href= ruta).btn.btn-light.nav-tema-item__btn
                     | Ver más
-
+    
+    
 mixin creditosFooter(ruta)
     footer#Creditos.footer
         .container
@@ -92,27 +129,24 @@ mixin creditosFooter(ruta)
                         span.text-small Gestora de desarrollo de programas<br/>
 
                     p.footer-texto
-                        span.text-small.text-uppercase Centro para la Formación Cafetera
-                        br
-                        span.text-small Regional Caldas 
+                        span.text-small.text-uppercase Centro para la Formación Cafetera - Regional Caldas
 
                     p.footer-texto.mb-2
-                        | #[strong Julio Alexander Rodríguez del Castillo]<br/>   
+                        | #[strong Julio Alexander Rodríguez del Castillo]<br/>
                         span.text-small E-Pedagogo instruccional<br/>
-
-                    p.footer-texto.mb-2
+                        br
                         | #[strong Sandra Milena Henao Melchor]<br/>   
-                        span.text-small Evaluadora de contenidosl<br/>
+                        span.text-small Evaluadora de contenidos<br/>
+
+                    p.footer-texto
+                        span.text-small.text-uppercase Centro de Atención Sector Agropecuario – Regional Risaralda
 
                     p.footer-texto.mb-2
                         | #[strong Érika Alejandra Beltrán Cuesta]<br/>   
                         span.text-small Evaluadora de calidad instruccional<br/>
 
                     p.footer-texto
-                        span.text-small.text-uppercase Centro de Atención Sector Agropecuario
-                        br
-                        span.text-small Regional Risaralda
-
+                        span.text-small.text-uppercase Centro de Atención Sector Agropecuario – Regional Risaralda
                        
                 .col-12.col-md-5
                     h4.footer-subtitulo-2.mt-0 
@@ -123,14 +157,22 @@ mixin creditosFooter(ruta)
                         | #[strong Francisco José Lizcano Reyes ]<br/>   
                         span.text-small Responsable del equipo<br/>
 
+                    p.footer-texto
+                        | #[strong Leyson Fabian Castaño Perez]<br/>   
+                        span.text-small Integración de recursos y pruebas<br/>
+
                     p.footer-texto                           
                         | #[strong Eulises Orduz]<br/>  
                         | #[strong Luis Gabriel Urueta Alvarez]<br/>
                         span.text-small Diseño Web & Producción Audiovisual<br/>
 
                     p.footer-texto
-                        | #[strong Jhon Jairo Urueta Alvarez]<br/>                                    
+                        | #[strong Jhon Jairo Urueta Alvarez]<br>                                    
                         span.text-small Desarrollo Front-End<br/>
+
+                    p.footer-texto
+                        | #[strong Luis Gabriel Urueta Álvarez]<br>                                    
+                        span.text-small Desarrollo de actividades didácticas<br/>
 
                     p.footer-texto
                         span.text-small.text-uppercase CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA   

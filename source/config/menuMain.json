@@ -7,7 +7,7 @@
   },
   {
     "id":0,
-    "icon": "fa fa-play-circle",
+    "icon": "fa fa-file-text",
     "slug": "introduccion",
     "title": "Introducción",
     "breadcrumb": ["Inicio","introduccion"],
