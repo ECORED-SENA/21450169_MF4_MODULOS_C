@@ -18,13 +18,14 @@
 
     br
 
-    .row.mx-0.recuadro1.p-2.justify-content-center
+    .row.mx-0.recuadro1
 
-        .col-12.py-3
+        .col-12.icon.valor
 
-            img(src="assets/images/pages/img9.svg", style="max-width: 100%").img-fluid
+            p.m-0.text-icon
+                b Por valor
         
-        .col-12
+        .col-12.py-3
 
             p Cuando se hace un llamado a una función con parámetros por valor, dicha función recibe una copia del valor enviado en el parámetro y utiliza dicho valor para efectuar con este las operaciones que le correspondan; de ningún modo el valor original del parámetro podrá ser modificado, y por lo tanto, siempre se mantendrá igual.
 
@@ -32,30 +33,35 @@
 
             p Para comprender mejor lo anterior, se ilustra a continuación con un ejemplo:
 
-        .col-4
+        .col-12
+        
+            .row.justify-content-center
 
-            .card.mt-3
+                .col-4
 
-                a.btn(href="media/documentos/MF4_Ejemplo_1_Por_valor.pdf" target="_blank").media-link      
+                    .card.mt-3
 
-                    img(src="assets/images/pages/img76.svg", alt="").media-link-icon
+                        a.btn(href="media/documentos/MF4_Ejemplo_1_Por_valor.pdf" target="_blank").media-link      
 
-                    .media-link-title
-                        .row
-                            .col-12.p-0
-                                p.txt-btn #[strong Ejemplo 1] 
-                            .col-12.d-none.d-sm-none.d-md-none.d-lg-block.p-0
-                                p.txt-btn Por valor
+                            img(src="assets/images/pages/img76.svg", alt="").media-link-icon
+
+                            .media-link-title
+                                .row
+                                    .col-12.p-0
+                                        p.txt-btn #[strong Ejemplo 1] 
+                                    .col-12.d-none.d-sm-none.d-md-none.d-lg-block.p-0
+                                        p.txt-btn Por valor
 
     br
 
-    .row.mx-0.recuadro1.p-2.justify-content-center
+    .row.mx-0.recuadro1
 
-        .col-12.py-3
+        .col-12.icon.referencia
 
-            img(src="assets/images/pages/img10.svg", style="max-width: 100%").img-fluid
+            p.m-0.text-icon
+                b Por referencia
         
-        .col-12
+        .col-12.pt-3
 
             p Cuando se hace un llamado a una función con parámetros por referencia, dicha función recibe la dirección en memoria de la variable enviada en el parámetro y utiliza dicho valor para efectuar con este las operaciones que le correspondan, teniendo además la propiedad de modificar el valor original; por lo tanto, cuando se requiere que una función modifique el valor que reciba y lo regrese modificado, este es el método de paso de parámetros que debe utilizarse.
 
@@ -74,21 +80,25 @@
             p En la función a la que se le envía el parámetro por referencia, se realizan operaciones con este, y al retornar al punto del programa donde la función se llamó, el parámetro contiene el valor según las modificaciones que hayan sido efectuadas en la función a la que se le ha enviado. 
 
             p Para comprender mejor lo anterior e identificar la diferencia, se ilustra a continuación el mismo ejemplo visto con parámetros por valor, modificado ahora para parámetros por referencia: 
+        
+        .col-12
 
-        .col-4
+            .row.justify-content-center
 
-            .card.mt-3
+                .col-4
 
-                a.btn(href="media/documentos/MF4_Ejemplo_2_Por_referencia.pdf" target="_blank").media-link      
+                    .card.mt-3
 
-                    img(src="assets/images/pages/img76.svg", alt="").media-link-icon
+                        a.btn(href="media/documentos/MF4_Ejemplo_2_Por_referencia.pdf" target="_blank").media-link      
 
-                    .media-link-title
-                        .row
-                            .col-12.p-0
-                                p.txt-btn #[strong Ejemplo 2] 
-                            .col-12.d-none.d-sm-none.d-md-none.d-lg-block.p-0
-                                p.txt-btn Por referencia
+                            img(src="assets/images/pages/img76.svg", alt="").media-link-icon
+
+                            .media-link-title
+                                .row
+                                    .col-12.p-0
+                                        p.txt-btn #[strong Ejemplo 2] 
+                                    .col-12.d-none.d-sm-none.d-md-none.d-lg-block.p-0
+                                        p.txt-btn Por referencia
 
         .row.mx-3.recuadro2.align-items-center.my-3.justify-content-center
 
@@ -106,28 +116,26 @@
 
         .col-12.my-4.text-center
 
-                img(src="assets/images/pages/img13.svg", style="max-width: 100%").img-fluid
-
+                img(src="assets/images/pages/img2.png", style="max-width: 100%").img-fluid
+        
         .col-12
 
-            p En el ejemplo se crea un programa que calcula la suma y el producto de dos valores, con una sola función que debe generar ambos resultados; esto solamente es posible a través de funciones con parámetros por referencia, ya que es importante recordar que las funciones con parámetros por valor retornan un único valor.
+            .row.justify-content-center
 
-            p En este ejemplo también se ilustra la utilización de parámetros por valor y parámetros por referencia en la misma función.
+                .col-4
 
-        .col-4
+                    .card.mt-3
 
-            .card.mt-3
+                        a.btn(href="media/documentos/MF4_Ejemplo_3_Por_valor_y_referencia.pdf" target="_blank").media-link      
 
-                a.btn(href="media/documentos/MF4_Ejemplo_3_Por_valor_y_referencia.pdf" target="_blank").media-link      
+                            img(src="assets/images/pages/img76.svg", alt="").media-link-icon
 
-                    img(src="assets/images/pages/img76.svg", alt="").media-link-icon
-
-                    .media-link-title
-                        .row
-                            .col-12.p-0
-                                p.txt-btn #[strong Ejemplo 3] 
-                            .col-12.d-none.d-sm-none.d-md-none.d-lg-block.p-0
-                                p.txt-btn Por valor y referencia
+                            .media-link-title
+                                .row
+                                    .col-12.p-0
+                                        p.txt-btn #[strong Ejemplo 3] 
+                                    .col-12.d-none.d-sm-none.d-md-none.d-lg-block.p-0
+                                        p.txt-btn Por valor y referencia
         
         .col-12.mt-4
 
@@ -135,17 +143,21 @@
 
             p Para comprender mejor lo anterior, se ilustra a continuación con un ejemplo:
 
-        .col-4
+        .col-12
 
-            .card.mt-3
+            .row.justify-content-center
 
-                a.btn(href="media/documentos/MF4_Ejemplo_4_Funciones_con_parametros.pdf" target="_blank").media-link      
+                .col-4
 
-                    img(src="assets/images/pages/img76.svg", alt="").media-link-icon
+                    .card.mt-3
 
-                    .media-link-title
-                        .row
-                            .col-12.p-0
-                                p.txt-btn #[strong Ejemplo 4] 
-                            .col-12.d-none.d-sm-none.d-md-none.d-lg-block.p-0
-                                p.txt-btn Funciones con parámetros
+                        a.btn(href="media/documentos/MF4_Ejemplo_4_Funciones_con_parametros.pdf" target="_blank").media-link      
+
+                            img(src="assets/images/pages/img76.svg", alt="").media-link-icon
+
+                            .media-link-title
+                                .row
+                                    .col-12.p-0
+                                        p.txt-btn #[strong Ejemplo 4] 
+                                    .col-12.d-none.d-sm-none.d-md-none.d-lg-block.p-0
+                                        p.txt-btn Funciones con parámetros

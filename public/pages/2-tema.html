@@ -8,31 +8,39 @@
         </div>
         <div class="col-12"><img class="img-fluid" src="assets/images/pages/img8.svg" style="max-width: 100%" /></div>
     </div><br />
-    <div class="row mx-0 recuadro1 p-2 justify-content-center">
-        <div class="col-12 py-3"><img class="img-fluid" src="assets/images/pages/img9.svg" style="max-width: 100%" /></div>
-        <div class="col-12">
+    <div class="row mx-0 recuadro1">
+        <div class="col-12 icon valor">
+            <p class="m-0 text-icon"><b>Por valor</b></p>
+        </div>
+        <div class="col-12 py-3">
             <p>Cuando se hace un llamado a una función con parámetros por valor, dicha función recibe una copia del valor enviado en el parámetro y utiliza dicho valor para efectuar con este las operaciones que le correspondan; de ningún modo el valor original del parámetro podrá ser modificado, y por lo tanto, siempre se mantendrá igual.</p>
             <p>En la función a la que se le envía el parámetro se realizan operaciones con este sin modificarlo, y de igual manera, tampoco se modifica en la función que hace el llamado.</p>
             <p>Para comprender mejor lo anterior, se ilustra a continuación con un ejemplo:</p>
         </div>
-        <div class="col-4">
-            <div class="card mt-3"><a class="btn media-link" href="media/documentos/MF4_Ejemplo_1_Por_valor.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/img76.svg" alt="" />
-                    <div class="media-link-title">
-                        <div class="row">
-                            <div class="col-12 p-0">
-                                <p class="txt-btn"><strong>Ejemplo 1</strong> </p>
+        <div class="col-12">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <div class="card mt-3"><a class="btn media-link" href="media/documentos/MF4_Ejemplo_1_Por_valor.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/img76.svg" alt="" />
+                            <div class="media-link-title">
+                                <div class="row">
+                                    <div class="col-12 p-0">
+                                        <p class="txt-btn"><strong>Ejemplo 1</strong> </p>
+                                    </div>
+                                    <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
+                                        <p class="txt-btn">Por valor</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
-                                <p class="txt-btn">Por valor</p>
-                            </div>
-                        </div>
-                    </div>
-                </a></div>
+                        </a></div>
+                </div>
+            </div>
         </div>
     </div><br />
-    <div class="row mx-0 recuadro1 p-2 justify-content-center">
-        <div class="col-12 py-3"><img class="img-fluid" src="assets/images/pages/img10.svg" style="max-width: 100%" /></div>
-        <div class="col-12">
+    <div class="row mx-0 recuadro1">
+        <div class="col-12 icon referencia">
+            <p class="m-0 text-icon"><b>Por referencia</b></p>
+        </div>
+        <div class="col-12 pt-3">
             <p>Cuando se hace un llamado a una función con parámetros por referencia, dicha función recibe la dirección en memoria de la variable enviada en el parámetro y utiliza dicho valor para efectuar con este las operaciones que le correspondan, teniendo además la propiedad de modificar el valor original; por lo tanto, cuando se requiere que una función modifique el valor que reciba y lo regrese modificado, este es el método de paso de parámetros que debe utilizarse.</p>
         </div>
         <div class="row mx-3 recuadro2 align-items-center my-3">
@@ -45,19 +53,23 @@
             <p>En la función a la que se le envía el parámetro por referencia, se realizan operaciones con este, y al retornar al punto del programa donde la función se llamó, el parámetro contiene el valor según las modificaciones que hayan sido efectuadas en la función a la que se le ha enviado. </p>
             <p>Para comprender mejor lo anterior e identificar la diferencia, se ilustra a continuación el mismo ejemplo visto con parámetros por valor, modificado ahora para parámetros por referencia: </p>
         </div>
-        <div class="col-4">
-            <div class="card mt-3"><a class="btn media-link" href="media/documentos/MF4_Ejemplo_2_Por_referencia.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/img76.svg" alt="" />
-                    <div class="media-link-title">
-                        <div class="row">
-                            <div class="col-12 p-0">
-                                <p class="txt-btn"><strong>Ejemplo 2</strong> </p>
+        <div class="col-12">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <div class="card mt-3"><a class="btn media-link" href="media/documentos/MF4_Ejemplo_2_Por_referencia.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/img76.svg" alt="" />
+                            <div class="media-link-title">
+                                <div class="row">
+                                    <div class="col-12 p-0">
+                                        <p class="txt-btn"><strong>Ejemplo 2</strong> </p>
+                                    </div>
+                                    <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
+                                        <p class="txt-btn">Por referencia</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
-                                <p class="txt-btn">Por referencia</p>
-                            </div>
-                        </div>
-                    </div>
-                </a></div>
+                        </a></div>
+                </div>
+            </div>
         </div>
         <div class="row mx-3 recuadro2 align-items-center my-3 justify-content-center">
             <div class="col-2 text-center p-2"><img class="img-fluid" src="assets/images/pages/img12.svg" style="max-width: 100%" /></div>
@@ -68,42 +80,46 @@
         <div class="col-12">
             <p>Como ya se mencionó, el paso de parámetros por valor permite que las funciones retornen más de un valor. A continuación se ejemplifica dicha situación con el fin de que se entienda cómo funciona.</p>
         </div>
-        <div class="col-12 my-4 text-center"><img class="img-fluid" src="assets/images/pages/img13.svg" style="max-width: 100%" /></div>
+        <div class="col-12 my-4 text-center"><img class="img-fluid" src="assets/images/pages/img2.png" style="max-width: 100%" /></div>
         <div class="col-12">
-            <p>En el ejemplo se crea un programa que calcula la suma y el producto de dos valores, con una sola función que debe generar ambos resultados; esto solamente es posible a través de funciones con parámetros por referencia, ya que es importante recordar que las funciones con parámetros por valor retornan un único valor.</p>
-            <p>En este ejemplo también se ilustra la utilización de parámetros por valor y parámetros por referencia en la misma función.</p>
-        </div>
-        <div class="col-4">
-            <div class="card mt-3"><a class="btn media-link" href="media/documentos/MF4_Ejemplo_3_Por_valor_y_referencia.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/img76.svg" alt="" />
-                    <div class="media-link-title">
-                        <div class="row">
-                            <div class="col-12 p-0">
-                                <p class="txt-btn"><strong>Ejemplo 3</strong> </p>
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <div class="card mt-3"><a class="btn media-link" href="media/documentos/MF4_Ejemplo_3_Por_valor_y_referencia.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/img76.svg" alt="" />
+                            <div class="media-link-title">
+                                <div class="row">
+                                    <div class="col-12 p-0">
+                                        <p class="txt-btn"><strong>Ejemplo 3</strong> </p>
+                                    </div>
+                                    <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
+                                        <p class="txt-btn">Por valor y referencia</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
-                                <p class="txt-btn">Por valor y referencia</p>
-                            </div>
-                        </div>
-                    </div>
-                </a></div>
+                        </a></div>
+                </div>
+            </div>
         </div>
         <div class="col-12 mt-4">
             <p>Otra situación importante que puede presentarse en la utilización de funciones con parámetros consiste en la definición de estos por defecto; es decir, una función en la cual el llamado a esta no necesariamente tenga que contener todos los valores, sino que algunos de los parámetros se encuentren predefinidos para que ese valor predefinido sea utilizado en caso de que el llamado no contenga otro dato.</p>
             <p>Para comprender mejor lo anterior, se ilustra a continuación con un ejemplo:</p>
         </div>
-        <div class="col-4">
-            <div class="card mt-3"><a class="btn media-link" href="media/documentos/MF4_Ejemplo_4_Funciones_con_parametros.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/img76.svg" alt="" />
-                    <div class="media-link-title">
-                        <div class="row">
-                            <div class="col-12 p-0">
-                                <p class="txt-btn"><strong>Ejemplo 4</strong> </p>
+        <div class="col-12">
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <div class="card mt-3"><a class="btn media-link" href="media/documentos/MF4_Ejemplo_4_Funciones_con_parametros.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/img76.svg" alt="" />
+                            <div class="media-link-title">
+                                <div class="row">
+                                    <div class="col-12 p-0">
+                                        <p class="txt-btn"><strong>Ejemplo 4</strong> </p>
+                                    </div>
+                                    <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
+                                        <p class="txt-btn">Funciones con parámetros</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
-                                <p class="txt-btn">Funciones con parámetros</p>
-                            </div>
-                        </div>
-                    </div>
-                </a></div>
+                        </a></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

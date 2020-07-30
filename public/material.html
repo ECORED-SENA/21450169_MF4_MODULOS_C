@@ -158,7 +158,7 @@
                                         <div class="col-12">
                                             <p>Continuando con la importancia de las funciones en la programación, se aborda ahora de manera específica lo que tiene que ver con los diferentes tipos de parámetros que las funciones pueden recibir.</p><br>
                                             <p>Para que una función exista no es necesario que sea declarada con parámetros, bien puede hacerlo sin ellos; sin embargo, el hecho de que los contenga proporciona un amplio abanico de opciones al programador para el manejo de múltiple información.</p><br>
-                                            <p>Los parámetros que se manejan en las funciones son en realidad variables, y por lo tanto pueden ser de todos los tipos de datos que maneja el lenguaje, tales como: int, float, double, array, etc.</p>
+                                            <p>Los parámetros que se manejan en las funciones son en realidad variables, y por lo tanto pueden ser de todos los tipos de datos que maneja el lenguaje, tales como: <i>int, float, double, array, </i>etc.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -237,31 +237,39 @@
                         </div>
                         <div class="col-12"><img class="img-fluid" src="assets/images/pages/img8.svg" style="max-width: 100%"></div>
                     </div><br>
-                    <div class="row mx-0 recuadro1 p-2 justify-content-center">
-                        <div class="col-12 py-3"><img class="img-fluid" src="assets/images/pages/img9.svg" style="max-width: 100%"></div>
-                        <div class="col-12">
+                    <div class="row mx-0 recuadro1">
+                        <div class="col-12 icon valor">
+                            <p class="m-0 text-icon"><b>Por valor</b></p>
+                        </div>
+                        <div class="col-12 py-3">
                             <p>Cuando se hace un llamado a una función con parámetros por valor, dicha función recibe una copia del valor enviado en el parámetro y utiliza dicho valor para efectuar con este las operaciones que le correspondan; de ningún modo el valor original del parámetro podrá ser modificado, y por lo tanto, siempre se mantendrá igual.</p>
                             <p>En la función a la que se le envía el parámetro se realizan operaciones con este sin modificarlo, y de igual manera, tampoco se modifica en la función que hace el llamado.</p>
                             <p>Para comprender mejor lo anterior, se ilustra a continuación con un ejemplo:</p>
                         </div>
-                        <div class="col-4">
-                            <div class="card mt-3"><a class="btn media-link" href="media/documentos/MF4_Ejemplo_1_Por_valor.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/img76.svg" alt="">
-                                    <div class="media-link-title">
-                                        <div class="row">
-                                            <div class="col-12 p-0">
-                                                <p class="txt-btn"><strong>Ejemplo 1</strong> </p>
+                        <div class="col-12">
+                            <div class="row justify-content-center">
+                                <div class="col-4">
+                                    <div class="card mt-3"><a class="btn media-link" href="media/documentos/MF4_Ejemplo_1_Por_valor.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/img76.svg" alt="">
+                                            <div class="media-link-title">
+                                                <div class="row">
+                                                    <div class="col-12 p-0">
+                                                        <p class="txt-btn"><strong>Ejemplo 1</strong> </p>
+                                                    </div>
+                                                    <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
+                                                        <p class="txt-btn">Por valor</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
-                                                <p class="txt-btn">Por valor</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a></div>
+                                        </a></div>
+                                </div>
+                            </div>
                         </div>
                     </div><br>
-                    <div class="row mx-0 recuadro1 p-2 justify-content-center">
-                        <div class="col-12 py-3"><img class="img-fluid" src="assets/images/pages/img10.svg" style="max-width: 100%"></div>
-                        <div class="col-12">
+                    <div class="row mx-0 recuadro1">
+                        <div class="col-12 icon referencia">
+                            <p class="m-0 text-icon"><b>Por referencia</b></p>
+                        </div>
+                        <div class="col-12 pt-3">
                             <p>Cuando se hace un llamado a una función con parámetros por referencia, dicha función recibe la dirección en memoria de la variable enviada en el parámetro y utiliza dicho valor para efectuar con este las operaciones que le correspondan, teniendo además la propiedad de modificar el valor original; por lo tanto, cuando se requiere que una función modifique el valor que reciba y lo regrese modificado, este es el método de paso de parámetros que debe utilizarse.</p>
                         </div>
                         <div class="row mx-3 recuadro2 align-items-center my-3">
@@ -274,19 +282,23 @@
                             <p>En la función a la que se le envía el parámetro por referencia, se realizan operaciones con este, y al retornar al punto del programa donde la función se llamó, el parámetro contiene el valor según las modificaciones que hayan sido efectuadas en la función a la que se le ha enviado. </p>
                             <p>Para comprender mejor lo anterior e identificar la diferencia, se ilustra a continuación el mismo ejemplo visto con parámetros por valor, modificado ahora para parámetros por referencia: </p>
                         </div>
-                        <div class="col-4">
-                            <div class="card mt-3"><a class="btn media-link" href="media/documentos/MF4_Ejemplo_2_Por_referencia.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/img76.svg" alt="">
-                                    <div class="media-link-title">
-                                        <div class="row">
-                                            <div class="col-12 p-0">
-                                                <p class="txt-btn"><strong>Ejemplo 2</strong> </p>
+                        <div class="col-12">
+                            <div class="row justify-content-center">
+                                <div class="col-4">
+                                    <div class="card mt-3"><a class="btn media-link" href="media/documentos/MF4_Ejemplo_2_Por_referencia.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/img76.svg" alt="">
+                                            <div class="media-link-title">
+                                                <div class="row">
+                                                    <div class="col-12 p-0">
+                                                        <p class="txt-btn"><strong>Ejemplo 2</strong> </p>
+                                                    </div>
+                                                    <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
+                                                        <p class="txt-btn">Por referencia</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
-                                                <p class="txt-btn">Por referencia</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a></div>
+                                        </a></div>
+                                </div>
+                            </div>
                         </div>
                         <div class="row mx-3 recuadro2 align-items-center my-3 justify-content-center">
                             <div class="col-2 text-center p-2"><img class="img-fluid" src="assets/images/pages/img12.svg" style="max-width: 100%"></div>
@@ -297,42 +309,46 @@
                         <div class="col-12">
                             <p>Como ya se mencionó, el paso de parámetros por valor permite que las funciones retornen más de un valor. A continuación se ejemplifica dicha situación con el fin de que se entienda cómo funciona.</p>
                         </div>
-                        <div class="col-12 my-4 text-center"><img class="img-fluid" src="assets/images/pages/img13.svg" style="max-width: 100%"></div>
+                        <div class="col-12 my-4 text-center"><img class="img-fluid" src="assets/images/pages/img2.png" style="max-width: 100%"></div>
                         <div class="col-12">
-                            <p>En el ejemplo se crea un programa que calcula la suma y el producto de dos valores, con una sola función que debe generar ambos resultados; esto solamente es posible a través de funciones con parámetros por referencia, ya que es importante recordar que las funciones con parámetros por valor retornan un único valor.</p>
-                            <p>En este ejemplo también se ilustra la utilización de parámetros por valor y parámetros por referencia en la misma función.</p>
-                        </div>
-                        <div class="col-4">
-                            <div class="card mt-3"><a class="btn media-link" href="media/documentos/MF4_Ejemplo_3_Por_valor_y_referencia.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/img76.svg" alt="">
-                                    <div class="media-link-title">
-                                        <div class="row">
-                                            <div class="col-12 p-0">
-                                                <p class="txt-btn"><strong>Ejemplo 3</strong> </p>
+                            <div class="row justify-content-center">
+                                <div class="col-4">
+                                    <div class="card mt-3"><a class="btn media-link" href="media/documentos/MF4_Ejemplo_3_Por_valor_y_referencia.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/img76.svg" alt="">
+                                            <div class="media-link-title">
+                                                <div class="row">
+                                                    <div class="col-12 p-0">
+                                                        <p class="txt-btn"><strong>Ejemplo 3</strong> </p>
+                                                    </div>
+                                                    <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
+                                                        <p class="txt-btn">Por valor y referencia</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
-                                                <p class="txt-btn">Por valor y referencia</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a></div>
+                                        </a></div>
+                                </div>
+                            </div>
                         </div>
                         <div class="col-12 mt-4">
                             <p>Otra situación importante que puede presentarse en la utilización de funciones con parámetros consiste en la definición de estos por defecto; es decir, una función en la cual el llamado a esta no necesariamente tenga que contener todos los valores, sino que algunos de los parámetros se encuentren predefinidos para que ese valor predefinido sea utilizado en caso de que el llamado no contenga otro dato.</p>
                             <p>Para comprender mejor lo anterior, se ilustra a continuación con un ejemplo:</p>
                         </div>
-                        <div class="col-4">
-                            <div class="card mt-3"><a class="btn media-link" href="media/documentos/MF4_Ejemplo_4_Funciones_con_parametros.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/img76.svg" alt="">
-                                    <div class="media-link-title">
-                                        <div class="row">
-                                            <div class="col-12 p-0">
-                                                <p class="txt-btn"><strong>Ejemplo 4</strong> </p>
+                        <div class="col-12">
+                            <div class="row justify-content-center">
+                                <div class="col-4">
+                                    <div class="card mt-3"><a class="btn media-link" href="media/documentos/MF4_Ejemplo_4_Funciones_con_parametros.pdf" target="_blank"> <img class="media-link-icon" src="assets/images/pages/img76.svg" alt="">
+                                            <div class="media-link-title">
+                                                <div class="row">
+                                                    <div class="col-12 p-0">
+                                                        <p class="txt-btn"><strong>Ejemplo 4</strong> </p>
+                                                    </div>
+                                                    <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
+                                                        <p class="txt-btn">Funciones con parámetros</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="col-12 d-none d-sm-none d-md-none d-lg-block p-0">
-                                                <p class="txt-btn">Funciones con parámetros</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a></div>
+                                        </a></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -344,8 +360,8 @@
                     </div>
                     <div class="row mx-0 recuadro1">
                         <div class="col-12">
-                            <p>Las funciones son pequeños módulos de un programa que se componen de diferentes líneas de código y están encargadas de ejecutar una tarea específica dentro de la solución informática.</p>
-                            <p>La declaración de una función está compuesta por varios elementos, tales como: tipo, nombre y parámetros. El tipo se trata del tipo de dato que la función va a retornar, el nombre es el identificador con que se conocerá la función dentro del programa y los parámetros son algunas de las variables que se necesitan para ejecutar la función.</p>
+                            <p>Para una mejor comprensión de toda la conceptualización presentada respecto a las funciones con parámetros y la aplicación de parámetros por valor y por referencia, es importante llevarlo a la práctica realizando ejercicios aplicados donde se crea la necesidad de analizar qué parámetros utilizar para resolver cada caso específico.</p>
+                            <p>A continuación, se ilustra la definición, declaración y el llamado de funciones con parámetros por valor y/o por referencia, aplicados en diferentes ejercicios.</p>
                         </div>
                         <div class="col-12"><img class="img-fluid" src="assets/images/pages/img14.svg" style="max-width: 100%"></div>
                         <div class="row mx-3 recuadro2 align-items-center my-3">
@@ -556,7 +572,7 @@
                 <div class="row">
                     <div class="col-12 col-md-5">
                         <h3 class="footer-subtitulo mb-4">ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES </h3>
-                        <p class="footer-texto mb-2"><strong>Ingry Dayanna Bonilla Monzon </strong><br /> <span class="text-small">Lider del equipo</span></p>
+                        <p class="footer-texto mb-2"><strong>Ingry Dayanna Bonilla Monzón </strong><br /> <span class="text-small">Líder del equipo</span></p>
                     </div>
                 </div>
                 <div class="row mt-5">
@@ -580,7 +596,7 @@
                             <div class="fa fa-caret-right mr-2"></div>Diseño y desarrollo de recursos educativos digitales
                         </h4>
                         <p class="footer-texto"><strong>Francisco José Lizcano Reyes </strong><br /> <span class="text-small">Responsable del equipo<br /></span></p>
-                        <p class="footer-texto"><strong>Leyson Fabian Castaño Perez</strong><br /> <span class="text-small">Integración de recursos y pruebas<br /></span></p>
+                        <p class="footer-texto"><strong>Leyson Fabián Castaño Pérez</strong><br /> <span class="text-small">Integración de recursos y pruebas<br /></span></p>
                         <p class="footer-texto"> <strong>Eulises Orduz</strong><br />
                             <strong>Luis Gabriel Urueta Alvarez</strong><br /><span class="text-small">Diseño Web & Producción Audiovisual<br /></span></p>
                         <p class="footer-texto"><strong>Jhon Jairo Urueta Alvarez</strong><br> <span class="text-small">Desarrollo Front-End<br /></span></p>
